@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+:root{
+   
+--color-primary: #6c63ff;
+--color-success: #0e9f62;
+--color-warning: #e95d11;
+--color-white: #fff;
+--color-gold: #ffd900;
+
+}
+
+.container{
+    width: 100%;
+}
+
+.wrapper{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text{
+    flex-basis: 45%;
+}
+
+.all-images{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+}
+
+.small-images{
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+}
+
+.small-images img{
+    width: 15vw;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    /* height: 19vh; */
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.small-images img:hover{
+    opacity: 1;
+}
+
+.main-images img{
+    width: 40vw;
+}
+
+
+p{
+  margin-bottom: 20px;  
+}
+
+.brand{
+    background: var(--color-success);
+    width: fit-content;
+    color: var(--color-white);
+    font-size: 12px;
+    padding: 2px 5px ;
+}
+
+h2{
+    font-size: 35px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.review{
+    background: var(--color-success);
+    display: inline-block;
+    color: var(--color-white);
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
+
+.review .fa{
+    color: var(--color-gold);
+}
+
+.fa-star-half{
+    color: var(--color-gold);
+
+}
+
+.price{
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.price-box{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    width: 30px;
+    border: 1px solid var(--color-white);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+button{
+    width: 130px;
+    color: #fff;    
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: var(--color-warning);
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+
+button .fa{
+    margin-right: 10px;
+}
+
+.buy{
+background: var(--color-primary);
+margin-top: 10px;
+}
+
+
+
+/*  Media quires */
+
+@media screen and (max-width:780px) {
+
+    .wrapper{
+        display: block;
+    }
+
+    
+    .main-images img{
+        width: 70vw;
+    }
+   
+    .all-images{
+        height: auto;
+    }
+
+    .brand{
+        
+        text-align: center;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .buy{
+        margin-top: 10px;
+    }
+
+}
+
